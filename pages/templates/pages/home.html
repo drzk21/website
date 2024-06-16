@@ -1,7 +1,55 @@
-<!-- pages/templates/pages/home.html -->
-
 {% extends "base.html" %}
 
+{% load static %}
+
+{% block title %}Home - Tutor Portfolio{% endblock title %}
+
 {% block page_content %}
-    <h1>Hello, World!</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="{% static 'images/headshot.jpg' %}" alt="Profile Picture" class="img-thumbnail rounded-circle mb-3 w-60">
+        </div>
+        <div class="col-md-8">
+            <h1>Hi! I'm Audra.</h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Subjects I Teach</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Subject 1</li>
+                <li class="list-group-item">Subject 2</li>
+                <li class="list-group-item">Subject 3</li>
+                <li class="list-group-item">Subject 4</li>
+                <!-- Add more subjects as needed -->
+            </ul>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Contact Information</h2>
+            <p>If you would like to get in touch, please feel free to reach out via the following methods:</p>
+            <ul class="list-group">
+                <li class="list-group-item">Email: azooktutoring@gmail.com</li>
+                <li class="list-group-item">Phone: (929) 265-1315</li>
+                <!-- Add more contact methods as needed -->
+            </ul>
+        </div>
+    </div>
 {% endblock page_content %}
